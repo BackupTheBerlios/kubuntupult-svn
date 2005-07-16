@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Bookmark Catalog
-Comment=Catalogs your KDE bookmarks for easy launching through Katapult
-ServiceTypes=Katapult/Catalog
-Type=Service
-X-KDE-Library=katapult_bookmarkcatalog

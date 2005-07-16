@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Document Catalog
-Comment=Catalogs your documents for easy launching through Katapult
-ServiceTypes=Katapult/Catalog
-Type=Service
-X-KDE-Library=katapult_documentcatalog

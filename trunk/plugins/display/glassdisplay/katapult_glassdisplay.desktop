@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Glass Display
-Comment=Glass display plugin for Katapult
-ServiceTypes=Katapult/Display
-Type=Service
-X-KDE-Library=katapult_glassdisplay
