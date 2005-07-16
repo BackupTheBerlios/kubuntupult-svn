@@ -21,5 +21,4 @@ katapult_LDFLAGS = $(KDE_RPATH) $(all_libraries)
 katapult_LDADD = $(LIB_KDEUI) $(LIB_KIO) $(top_builddir)/common/libkatapultcatalog.la $(top_builddir)/common/libkatapultdisplay.la
 
 # this is where the desktop file will go 
-shelldesktopdir   = $(kde_appsdir)/Utilities
-shelldesktop_DATA = katapult.desktop
+xdg_apps_DATA = katapult.desktop
