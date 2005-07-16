@@ -2,8 +2,9 @@ katapult (0.3) breezy; urgency=low
 
   * Increased Version number
   * Merged Ubuntu patches to main code (fixed makefile and .desktop file)
-
- -- Martin Meredith <martin@sourceguru.net>  Sat, 16 Jul 2005 14:16:27 +0100
+  * Default Auto-Exec Behaviour Changed (Closes 4243)
+  
+ -- Martin Meredith <martin@sourceguru.net>  Sat, 16 Jul 2005 14:31:50 +0100
 
 katapult (0.2-0ubuntu0.3~5.04ubp1) breezy; urgency=low
 

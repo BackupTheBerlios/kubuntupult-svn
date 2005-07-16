@@ -56,7 +56,7 @@ void KatapultSettings::readSettings()
 	_noResultsDelay = config->readUnsignedNumEntry("NoResultsDelay", 2500);
 	_noResultsAction = (NRAction) config->readUnsignedNumEntry("NoResultsAction", NR_ClearQuery);
 	_systrayIcon = config->readBoolEntry("SystrayIcon", TRUE);
-	_autoExec = config->readBoolEntry("AutoExec", TRUE);
+	_autoExec = config->readBoolEntry("AutoExec", FALSE);
 	_displayName = config->readEntry("Display", "Glass Display");
 	
 	QStringList defCatalogs;
