@@ -63,8 +63,12 @@ Katapult::Katapult()
 	
 	connect(settings, SIGNAL(catalogsChanged()), this, SLOT(loadCatalogPlugins()));
 	connect(settings, SIGNAL(displayChanged()), this, SLOT(initDisplay()));
+	connect(settings, SIGNAL(systrayChanged()), this, SLOT(updateSystray()));
 	
-	show();
+	if(settings->systrayIcon())
+	{
+		show();
+	}
 
 }
 
@@ -284,6 +288,14 @@ void Katapult::execute()
 		hideTimer->start(settings->hideDelay(), TRUE);
 	}
 	executing = FALSE;
+}
+
+void Katapult::updateSystray()
+{
+	if(settings->systrayIcon())
+		show();
+	else
+		hide();
 }
 
 void Katapult::keyReleased(QKeyEvent *e)

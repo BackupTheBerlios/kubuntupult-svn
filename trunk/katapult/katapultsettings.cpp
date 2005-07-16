@@ -55,6 +55,7 @@ void KatapultSettings::readSettings()
 	_hideDelay = config->readUnsignedNumEntry("HideDelay", 1000);
 	_noResultsDelay = config->readUnsignedNumEntry("NoResultsDelay", 2500);
 	_noResultsAction = (NRAction) config->readUnsignedNumEntry("NoResultsAction", NR_ClearQuery);
+	_systrayIcon = config->readBoolEntry("SystrayIcon", TRUE);
 	_autoExec = config->readBoolEntry("AutoExec", TRUE);
 	_displayName = config->readEntry("Display", "Glass Display");
 	
@@ -69,6 +70,7 @@ void KatapultSettings::writeSettings()
 	config->writeEntry("HideDelay", _hideDelay);
 	config->writeEntry("NoResultsDelay", _noResultsDelay);
 	config->writeEntry("NoResultsAction", (int) _noResultsAction);
+	config->writeEntry("SystrayIcon", _systrayIcon);
 	config->writeEntry("AutoExec", _autoExec);
 	config->writeEntry("Catalogs", _activeCatalogNames);
 	config->writeEntry("Display", _displayName);
@@ -100,8 +102,10 @@ void KatapultSettings::configure()
 		KatapultConfigDlg *dlg = new KatapultConfigDlg(this);
 		if(dlg->exec() == QDialog::Accepted) {
 			writeSettings();
+			emit systrayChanged();
 			loadCatalogPlugins();
 			emit catalogsChanged();
+			
 		} else {
 			readSettings();
 			loadCatalogPlugins();
@@ -158,6 +162,16 @@ KatapultSettings::NRAction KatapultSettings::noResultsAction() const
 void KatapultSettings::setNoResultsAction(NRAction _noResultsAction)
 {
 	this->_noResultsAction = _noResultsAction;
+}
+
+bool KatapultSettings::systrayIcon() const
+{
+	return _systrayIcon;
+}
+
+void KatapultSettings::setSystrayIcon(bool _systrayIcon)
+{
+	this->_systrayIcon = _systrayIcon;
 }
 
 QString KatapultSettings::displayName() const

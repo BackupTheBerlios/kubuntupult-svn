@@ -56,6 +56,8 @@ public:
 	void setNoResultsDelay(int);
 	NRAction noResultsAction() const;
 	void setNoResultsAction(NRAction);
+	bool systrayIcon() const;
+	void setSystrayIcon(bool);
 	
 	// display settings
 	QString displayName() const;
@@ -78,6 +80,7 @@ public slots:
 	void configure();
 	
 signals:
+	void systrayChanged();
 	void displayChanged();
 	void catalogsChanged();
 	
@@ -92,6 +95,7 @@ private:
 	int _hideDelay;
 	int _noResultsDelay;
 	NRAction _noResultsAction;
+	bool _systrayIcon;
 	
 	// display settings
 	QString _displayName;

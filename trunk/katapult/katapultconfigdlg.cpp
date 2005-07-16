@@ -54,6 +54,7 @@ KatapultConfigDlg::KatapultConfigDlg(KatapultSettings *settings)
 	general->hideDelay->setValue(settings->hideDelay());
 	general->autoExec->setChecked(settings->isAutoExecute());
 	general->noResultsDelay->setValue(settings->noResultsDelay());
+	general->systrayIcon->setChecked(settings->systrayIcon());
 	switch(settings->noResultsAction()) {
 		case KatapultSettings::NR_DoNothing:	general->nrDoNothing->setChecked(TRUE);		break;
 		case KatapultSettings::NR_HideDisplay:	general->nrHideDisplay->setChecked(TRUE);	break;
@@ -117,6 +118,7 @@ void KatapultConfigDlg::saveSettings()
 	settings->setHideDelay(general->hideDelay->value());
 	settings->setAutoExecute(general->autoExec->isChecked());
 	settings->setNoResultsDelay(general->noResultsDelay->value());
+	settings->setSystrayIcon(general->systrayIcon->isChecked());
 	if (general->nrDoNothing->isChecked()) {
 		settings->setNoResultsAction(KatapultSettings::NR_DoNothing);
 	} else if (general->nrHideDisplay->isChecked()) {
