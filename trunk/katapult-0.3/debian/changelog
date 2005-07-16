@@ -1,0 +1,34 @@
+katapult (0.3) breezy; urgency=low
+
+  * Increased Version number
+
+ -- Martin Meredith <martin@sourceguru.net>  Sat, 16 Jul 2005 13:50:02 +0100
+
+katapult (0.2-0ubuntu0.3~5.04ubp1) breezy; urgency=low
+
+  * Backported for Hoary
+
+ -- Martin Meredith <martin@sourceguru.net>  Mon, 27 Jun 2005 00:16:14 +0100
+
+katapult (0.2-0ubuntu0.3) breezy; urgency=low
+
+  * Fixed typo in debian/control.
+
+ -- Jean-Remy Falleri <jr.falleri@laposte.net>  Mon, 20 Jun 2005 14:08:35 +0000
+
+katapult (0.2-0ubuntu0.2) breezy; urgency=low
+
+  * Fixed build deps removing build essentials.
+  * Fixed URL in control and copyright file. 
+
+ -- Jean-Remy Falleri <jr.falleri@laposte.net>  Fri, 17 Jun 2005 12:45:52 +0000
+
+katapult (0.2-0ubuntu0.1) breezy; urgency=low
+
+  * Initial Release.
+  * Fixed katapult.desktop file to be KDE standard complient (patch number 02).
+  * Fixed katapult/Makefile.am for desktop file directory (patch number 01).
+  * Added a manpage (from docbook source).
+
+ -- Jean-Remy Falleri <jr.falleri@laposte.net>  Tue, 10 May 2005 14:09:36 +0200
+

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Program Catalog
+Comment=Catalogs your KDE programs for easy launching through Katapult
+ServiceTypes=Katapult/Catalog
+Type=Service
+X-KDE-Library=katapult_programcatalog

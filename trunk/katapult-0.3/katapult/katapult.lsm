@@ -1,0 +1,16 @@
+Begin3
+Title:          Katapult
+Version:        0.1
+Entered-date:   
+Description:    
+Keywords:       KDE Qt
+Author:         Joe Ferris <jferris@optimistictech.com>
+Maintained-by:  Joe Ferris <jferris@optimistictech.com>
+Home-page:      
+Alternate-site: 
+Primary-site:   ftp://ftp.kde.org/pub/kde/unstable/apps/utils
+                xxxxxx  katapult-0.1.tar.gz
+                xxx     katapult-0.1.lsm
+Platform:       Linux. Needs KDE
+Copying-policy: GPL
+End
