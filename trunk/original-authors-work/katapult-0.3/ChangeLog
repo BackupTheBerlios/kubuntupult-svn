@@ -1,0 +1,61 @@
+0.2 to 0.3
+	-- Katapult --
+	Feature: Katapult now has its own icon, thanks to Lee Olson!
+		<clearbeast at gmail dot com>
+	Feature: You can now see multiple results by pressing down (configurable)
+	Feature: You can now select an action first and then select items which
+		match that action (for example, matching only programs by selecting
+		run program). Press Tab before typing anything to access this feature.
+	Feature: It is now possible to choose a different action than
+		the default, either by pressing Tab before typing anything, or (if you
+		have disable autoexecution) by pressing Tab after finding a result.
+	Feature: It is now possible to refresh the catalogs (this should be done
+		automatically after I add multithreading)
+	Bugfix: Katapult no longer crashes if you try to execute a query with no
+		results
+	Technical: Katapult now used KShared for items, so that it is now much
+		easier to prevent a catalog from deleting an item in use when its
+		results are cleared (this should prevent a lot of potential crash bugs)
+	
+	-- Glass Display --
+	Feature: new look and the ability to draw panes of arbitrary size (required
+		for the multi-item views).
+		
+	-- Document Catalog --
+	Bugfix: sometimes selecting a directory would open a child directory instead
+	Bugfix: sometimes results were deleted before they were unneeded (crash)
+
+0.1 to 0.2
+	-- Katapult --
+	Feature: when there are no results, the query can be cleared or the
+		display hidden (configurable) (as requested)
+	Feature: word abbreviations can now be used (if you type the beginning
+		of a word and press space, it will try to guess the word.
+	Feature: if you type the beginning of a word besides the first word
+		of an item, the query will start there (as requested)
+	Feature: added the ability to backspace
+	Improvement: the settings dialog no longer hides catalog pages when
+		you click on the main catalog configuration page
+	Optimize: actions are now handled more efficiently, and can easily be
+		reused
+	Bugfix: fixed a bug that caused the program to sometimes lock while
+		automatically executing an action
+	Bugfix: some duplicate items were not removed, which prevented
+		automatic execution
+	
+	-- Program Catalog --
+	Feature: added the ability to ignore programs without icons
+	Feature: programs can be cataloged by executable name instead of
+		the name from the .desktop file
+	Bugfix: I think I nailed the crash-on-execute-program bug
+	
+	-- Bookmark Catalog --
+	Feature: added the ability to include bookmarks from Mozilla
+
+	-- Document Catalog --
+	Feature: Katapult can now catalog your documents (in your home folder)
+
+	-- Glass Display --
+	Bufix: fixed a bug where the item text would sometimes leak into the
+		action text
+	Feature: fonts now dynamically resize to optimally fit text (configurable)
