@@ -221,6 +221,14 @@ This sets how long Katapult will wait before hiding the launcher.</string>
                 <property name="name">
                     <cstring>buttonGroup3</cstring>
                 </property>
+		<property name="sizePolicy">
+                     <sizepolicy>
+                         <hsizetype>3</hsizetype>
+                         <vsizetype>3</vsizetype>
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                     </sizepolicy>
+                </property>
                 <property name="title">
                     <string>System Tray</string>
                 </property>
@@ -232,7 +240,7 @@ This sets how long Katapult will wait before hiding the launcher.</string>
                         <rect>
                             <x>10</x>
                             <y>30</y>
-                            <width>307</width>
+                            <width>280</width>
                             <height>24</height>
                         </rect>
                     </property>
@@ -240,7 +248,7 @@ This sets how long Katapult will wait before hiding the launcher.</string>
                         <bool>false</bool>
                     </property>
                     <property name="text">
-                        <string>Show an icon in the Systray</string>
+                        <string>Show an icon in the systray</string>
                     </property>
                     <property name="toolTip" stdset="0">
                         <string>If activated, katapult shows an icon in the System Tray when running</string>
