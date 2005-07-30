@@ -684,6 +684,7 @@ uninstall-am: uninstall-info-am uninstall-kde_servicetypesDATA \
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
 
+
 #>+ 3
 katapultitem.moc.cpp: $(srcdir)/katapultitem.h
 	$(MOC) $(srcdir)/katapultitem.h -o katapultitem.moc.cpp

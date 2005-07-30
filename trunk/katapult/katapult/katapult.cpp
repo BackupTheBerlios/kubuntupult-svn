@@ -30,6 +30,7 @@
 
 #include <qpopupmenu.h>
 #include <qmenudata.h>
+#include <qcursor.h>
 
 #include "katapult.h"
 #include "actionregistry.h"
@@ -116,6 +117,7 @@ void Katapult::initAccel(QWidget *parent)
 	new KAction(i18n("Clear"), "editclear", Key_Left, this, SLOT(clearQuery()), actions, "clear");
 	new KAction(i18n("Close"), "fileclose", Key_Escape, this, SLOT(hideLauncher()), actions, "close");
 	new KAction(i18n("Complete Query"), "next", Key_Right, this, SLOT(completeQuery()), actions, "complete_query");
+	new KAction(i18n("Show Context Menu"), "menu", CTRL+Key_C, this, SLOT(showContextMenu()), actions, "show_menu");
 	
 	KAction *actGlobAccel = KStdAction::keyBindings(this, SLOT(showGlobalShortcutsDialog()), actions);
 	actGlobAccel->setText(i18n("Configure &Global Shortcuts..."));
@@ -296,6 +298,11 @@ void Katapult::updateSystray()
 		show();
 	else
 		hide();
+}
+
+void Katapult::showContextMenu()
+{
+	contextMenu()->popup(QCursor::pos());
 }
 
 void Katapult::keyReleased(QKeyEvent *e)

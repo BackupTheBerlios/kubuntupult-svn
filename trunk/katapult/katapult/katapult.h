@@ -66,6 +66,7 @@ public slots:
 	virtual void keyReleased(QKeyEvent *);
 	void execute();
 	void updateSystray();
+	void showContextMenu();
 	
 protected:
 	virtual void mousePressEvent(QMouseEvent *);

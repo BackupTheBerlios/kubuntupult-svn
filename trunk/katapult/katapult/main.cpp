@@ -38,8 +38,12 @@ static KCmdLineOptions options[] =
 int main(int argc, char **argv)
 {
 	KAboutData about("katapult", I18N_NOOP("Katapult"), version, description,
-			KAboutData::License_GPL, "(C) 2005 Joe Ferris", 0, 0, "jferris@optimistictech.com");
-	about.addAuthor( "Joe Ferris", 0, "jferris@optimistictech.com" );
+			 KAboutData::License_GPL, I18N_NOOP("(C) until 2005, Joe Ferris\n(C) 2005, the Katapult-developers"), 0, 0, "https://developer.berlios.de/bugs/?group_id=4243");
+	about.addAuthor( "Jean-Remy Falleri" );
+	about.addAuthor( "Jonathan Riddell" );
+	about.addAuthor( "Martin Meredith" );
+	about.addAuthor( "Bastian Holst", 0, "bastianholst@gmx.de" );
+	about.addAuthor( I18N_NOOP("Original Author: Joe Ferris"), 0, "jferris@optimistictech.com" );
 	KCmdLineArgs::init(argc, argv, &about);
 	KCmdLineArgs::addCmdLineOptions( options );
 	KApplication app;

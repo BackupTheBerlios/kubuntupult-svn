@@ -18,9 +18,9 @@
 # the SUBDIRS is filled automatically by am_edit. If files are 
 # in this directory they are installed into the english dir
 
-srcdir = /home/doros/src/local/kde/katapult/doc
-top_srcdir = /home/doros/src/local/kde/katapult
-VPATH = /home/doros/src/local/kde/katapult/doc
+srcdir = .
+top_srcdir = ..
+VPATH = .
 pkgdatadir = $(datadir)/katapult
 pkglibdir = $(libdir)/katapult
 pkgincludedir = $(includedir)/katapult
@@ -42,17 +42,17 @@ POST_UNINSTALL = :
 build_triplet = i686-pc-linux-gnu
 host_triplet = i686-pc-linux-gnu
 target_triplet = i686-pc-linux-gnu
-ACLOCAL = ${SHELL} /home/doros/src/local/kde/katapult/admin/missing --run aclocal-1.7
+ACLOCAL = ${SHELL} /home/bastian/programmieren/katapult/trunk/katapult/admin/missing --run aclocal-1.7
 AMDEP_FALSE = #
 AMDEP_TRUE = 
-AMTAR = ${SHELL} /home/doros/src/local/kde/katapult/admin/missing --run tar
+AMTAR = ${SHELL} /home/bastian/programmieren/katapult/trunk/katapult/admin/missing --run tar
 AR = ar
 ARTSCCONFIG = /usr/bin/artsc-config
 AUTOCONF = $(SHELL) $(top_srcdir)/admin/cvs.sh configure || touch configure
 AUTODIRS = 
-AUTOHEADER = ${SHELL} /home/doros/src/local/kde/katapult/admin/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/doros/src/local/kde/katapult/admin/missing --run automake-1.7
-AWK = gawk
+AUTOHEADER = ${SHELL} /home/bastian/programmieren/katapult/trunk/katapult/admin/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/bastian/programmieren/katapult/trunk/katapult/admin/missing --run automake-1.7
+AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -ansi -W -Wall -Wchar-subscripts -Wshadow -Wpointer-arith -Wmissing-prototypes -Wwrite-strings -D_XOPEN_SOURCE=500 -D_BSD_SOURCE -O2   -Wformat-security -Wmissing-format-attribute
@@ -141,7 +141,7 @@ LIB_XEXT = -lXext
 LIB_XRENDER = 
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/doros/src/local/kde/katapult/admin/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/bastian/programmieren/katapult/trunk/katapult/admin/missing --run makeinfo
 MCOPIDL = /usr/bin/mcopidl
 MEINPROC = /usr/bin/meinproc
 MOC = /usr/share/qt3/bin/moc
@@ -213,7 +213,7 @@ include_ARTS_FALSE = #
 include_ARTS_TRUE = 
 includedir = ${prefix}/include
 infodir = ${prefix}/info
-install_sh = /home/doros/src/local/kde/katapult/admin/install-sh
+install_sh = /home/bastian/programmieren/katapult/trunk/katapult/admin/install-sh
 kde_appsdir = ${datadir}/applnk
 kde_bindir = ${exec_prefix}/bin
 kde_confdir = ${datadir}/config
