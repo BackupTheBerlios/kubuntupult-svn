@@ -38,10 +38,10 @@ static KCmdLineOptions options[] =
 int main(int argc, char **argv)
 {
 	KAboutData about("katapult", I18N_NOOP("Katapult"), version, description,
-			 KAboutData::License_GPL, I18N_NOOP("(C) until 2005, Joe Ferris\n(C) 2005, the Katapult-developers"), 0, 0, "https://developer.berlios.de/bugs/?group_id=4243");
-	about.addAuthor( "Jean-Remy Falleri" );
-	about.addAuthor( "Jonathan Riddell" );
-	about.addAuthor( "Martin Meredith" );
+			 KAboutData::License_GPL, I18N_NOOP("(C) until 2005, Joe Ferris\n(C) 2005, the Katapult development team"), 0, 0, "https://developer.berlios.de/bugs/?group_id=4243");
+	about.addAuthor( "Jean-Remy Falleri", 0, "jr.falleri@gmail.com" );
+	about.addAuthor( "Jonathan Riddell", 0, "jriddell@ubuntu.com" );
+	about.addAuthor( "Martin Meredith" , 0, "martin@sourceguru.net");
 	about.addAuthor( "Bastian Holst", 0, "bastianholst@gmx.de" );
 	about.addAuthor( I18N_NOOP("Original Author: Joe Ferris"), 0, "jferris@optimistictech.com" );
 	KCmdLineArgs::init(argc, argv, &about);
