@@ -42,7 +42,6 @@
 Katapult::Katapult()
 	: KSystemTray(0, "katapultSysTray")
 {
-
 	setPixmap(KGlobal::iconLoader()->loadIcon("enhanced_browsing", KIcon::Small));
 
 	display = 0;
@@ -286,7 +285,8 @@ void Katapult::execute()
 		hideTimer->start(settings->hideDelay(), TRUE);
 	} else {
 		completeQuery();
-		action->execute(bestMatch.item());
+		if(!bestMatch.isNull())
+			action->execute(bestMatch.item());
 		hideTimer->start(settings->hideDelay(), TRUE);
 	}
 	executing = FALSE;

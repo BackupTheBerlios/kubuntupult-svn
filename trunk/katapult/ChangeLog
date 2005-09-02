@@ -1,9 +1,13 @@
-2005-7-30  Bastian Holst  <bastianholst@gmx.de>
+2005-09-02 Bastian Holst <bastianholst@gmx.de>
+        
+        * katapult.cpp: made katapult not to crash if your query can not be found 
+
+2005-07-30  Bastian Holst  <bastianholst@gmx.de>
         
         * created shortcut for the context-menu (ctrl+c)
         * added us to the authors
 
-2005-7-13  Bastian Holst  <bastianholst@gmx.de>
+2005-07-13  Bastian Holst  <bastianholst@gmx.de>
 
         * added the ability to deactivate the systray-icon
 
