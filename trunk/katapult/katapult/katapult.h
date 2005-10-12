@@ -28,6 +28,7 @@
 #include <ksystemtray.h>
 #include <kglobalaccel.h>
 #include <kactioncollection.h>
+#include <dcopobject.h>
 
 #include <qstring.h>
 #include <qptrlist.h>
@@ -40,10 +41,11 @@
 #include "katapultdisplay.h"
 #include "katapultcatalog.h"
 #include "katapultaction.h"
+#include "katapultiface.h"
 
 class KatapultSettings;
 
-class Katapult : public KSystemTray
+class Katapult : public KSystemTray, virtual public KatapultIface
 {
 	Q_OBJECT
 public:

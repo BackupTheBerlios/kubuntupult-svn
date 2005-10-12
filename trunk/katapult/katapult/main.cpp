@@ -22,6 +22,8 @@
 #include <kaboutdata.h>
 #include <kcmdlineargs.h>
 #include <klocale.h>
+#include <kapp.h>
+#include <dcopclient.h>
 
 #include "katapult.h"
 
@@ -47,6 +49,12 @@ int main(int argc, char **argv)
 	KCmdLineArgs::init(argc, argv, &about);
 	KCmdLineArgs::addCmdLineOptions( options );
 	KApplication app;
+	
+	if(kapp->dcopClient()->isApplicationRegistered("katapult")) {
+		kapp->dcopClient()->send("katapult", "Katapult", "showLauncher()", QByteArray());
+		return(0);
+	}
+	
 	Katapult *mainWin;
 	
 	KCmdLineArgs *args = KCmdLineArgs::parsedArgs();

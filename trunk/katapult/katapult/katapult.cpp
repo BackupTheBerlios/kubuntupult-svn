@@ -18,6 +18,7 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
+#include <kapp.h>
 #include <kiconloader.h>
 #include <kglobal.h>
 #include <kwin.h>
@@ -27,6 +28,7 @@
 #include <kpopupmenu.h>
 #include <klocale.h>
 #include <kaboutapplication.h>
+#include <dcopclient.h>
 
 #include <qpopupmenu.h>
 #include <qmenudata.h>
@@ -40,8 +42,13 @@
 #include "status.h"
 
 Katapult::Katapult()
-	: KSystemTray(0, "katapultSysTray")
+	: KSystemTray(0, "katapultSysTray"), 
+	  DCOPObject("Katapult")
 {
+	// Register with DCOP
+	kapp->dcopClient()->registerAs("katapult", false);
+	kapp->dcopClient()->setDefaultObject(objId());
+
 	setPixmap(KGlobal::iconLoader()->loadIcon("enhanced_browsing", KIcon::Small));
 
 	display = 0;

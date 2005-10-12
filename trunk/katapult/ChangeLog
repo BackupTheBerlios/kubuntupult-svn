@@ -1,3 +1,11 @@
+2005-10-12 Bastian Holst <bastianholst@gmx.de>
+        
+        * katapult/katapult.cpp, katapult.h: added DCOP-Interface
+        * katapult/katapultiface.h: DCOP-Interface
+        * katapult/main.cpp: Checking via DCOP if another instance of Katapult is already running. Closes: Bug #4594
+        * katapult/makefile.am: Added katapultiface.h
+        * Added NEWS-File because its required by Makefile.cvs
+
 2005-09-02 Bastian Holst <bastianholst@gmx.de>
         
         * katapult.cpp: made katapult not to crash if your query can not be found 

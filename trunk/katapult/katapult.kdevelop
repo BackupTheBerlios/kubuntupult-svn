@@ -22,7 +22,7 @@
   </general>
   <kdevautoproject>
     <general>
-      <activetarget>plugins/catalogs/documentcatalog/katapult_documentcatalog.la</activetarget>
+      <activetarget>katapult/katapult</activetarget>
       <useconfiguration>default</useconfiguration>
       <useactivetarget>true</useactivetarget>
     </general>
