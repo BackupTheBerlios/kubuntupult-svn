@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Pure Display
+Comment=Pure display plugin for Katapult
+ServiceTypes=Katapult/Display
+Type=Service
+X-KDE-Library=katapult_puredisplay

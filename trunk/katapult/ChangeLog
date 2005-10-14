@@ -1,3 +1,8 @@
+2005-10-14 Bastian Holst <bastianholst@gmx.de>
+        
+        * plugins/display/puredisplay: added a new display. Note: this is partly a very ugly hack, but it works :). 
+                Mostly for testing of new displays with 2 different sizes.
+
 2005-10-12 Bastian Holst <bastianholst@gmx.de>
         
         * katapult/katapult.cpp, katapult.h: added DCOP-Interface

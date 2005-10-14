@@ -1,1 +1,1 @@
-SUBDIRS = glassdisplay
+SUBDIRS = glassdisplay puredisplay
