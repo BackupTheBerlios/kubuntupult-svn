@@ -1,3 +1,9 @@
+2005-10-15 Bastian Holst <bastianholst@gmx.de>
+	* plugins/display/puredisplay/puredisplay.cpp: corrected margins.
+	* katapult/: added the new icons to main tree
+	* plugins/display: changed default icon in katapult (all displays) to our new icon
+	* katapult/katapult.cpp: changed systray-icon to the new katapult-icon
+
 2005-10-14 Bastian Holst <bastianholst@gmx.de>
         
         * plugins/display/puredisplay: added a new display. Note: this is partly a very ugly hack, but it works :). 

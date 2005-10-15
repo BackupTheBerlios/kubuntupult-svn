@@ -49,13 +49,13 @@ K_EXPORT_COMPONENT_FACTORY( katapult_puredisplay,
 #define WIDTH_DOUBLE 450
 #define HEIGHT_DOUBLE 205
 
-#define PADDING 6
+#define PADDING 7
 #define ICONSIZE 128
 
-#define LEFTMARGIN 1
-#define TOPMARGIN 1
-#define RIGHTMARGIN 8
-#define BOTTOMMARGIN 8
+#define LEFTMARGIN 0
+#define TOPMARGIN 6
+#define RIGHTMARGIN 0
+#define BOTTOMMARGIN 10
 
 #define LEFTOFFSET (LEFTMARGIN+PADDING)
 #define TOPOFFSET (TOPMARGIN+PADDING)
@@ -268,7 +268,7 @@ QPixmap PureDisplay::getDisplay()
 			else
 				label = query();
 		} else {
-			icon = KGlobal::iconLoader()->loadIcon("kmenu", KIcon::NoGroup, 128);
+			icon = KGlobal::iconLoader()->loadIcon("katapult", KIcon::NoGroup, 128);
 			if(query().isEmpty())
 				label = "Katapult";
 			else {

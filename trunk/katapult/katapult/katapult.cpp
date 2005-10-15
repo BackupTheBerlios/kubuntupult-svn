@@ -49,7 +49,7 @@ Katapult::Katapult()
 	kapp->dcopClient()->registerAs("katapult", false);
 	kapp->dcopClient()->setDefaultObject(objId());
 
-	setPixmap(KGlobal::iconLoader()->loadIcon("enhanced_browsing", KIcon::Small));
+	setPixmap(KGlobal::iconLoader()->loadIcon("katapult", KIcon::Small));
 
 	display = 0;
 	globalAccel = 0;

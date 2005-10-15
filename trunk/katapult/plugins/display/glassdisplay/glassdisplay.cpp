@@ -248,7 +248,7 @@ QPixmap GlassDisplay::getDisplay()
 			else
 				label = query();
 		} else {
-			icon = KGlobal::iconLoader()->loadIcon("kmenu", KIcon::NoGroup, 128);
+			icon = KGlobal::iconLoader()->loadIcon("katapult", KIcon::NoGroup, 128);
 			if(query().isEmpty())
 				label = "Katapult";
 			else {

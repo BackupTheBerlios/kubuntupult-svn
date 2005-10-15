@@ -30,7 +30,7 @@
 static const char description[] =
     I18N_NOOP("A plugin-driven utility that can launch applications, bookmarks, or anything else that you can find a plugin for.");
 
-static const char version[] = "0.2";
+static const char version[] = "0.2.svn20051015";
 
 static KCmdLineOptions options[] =
 {
